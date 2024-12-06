@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['res.cloudinary.com', 'randomuser.me'], // Specify allowed image domains
-  },
-};
+      domains: ['res.cloudinary.com','randomuser.me'],
+    },
+    experimental:{
+      reactRoot: true,
+      suppressHydrationWarning: true,
+    }
+}
 
-export default nextConfig;
+module.exports = nextConfig
