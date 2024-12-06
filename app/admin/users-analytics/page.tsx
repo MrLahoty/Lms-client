@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { FC } from "react";
 import AdminSidebar from "../../components/Admin/sidebar/AdminSidebar";
 import Heading from "../../utils/Heading";
 import DashboardHeader from "../../components/Admin/DashboardHeader";
@@ -7,7 +7,7 @@ import UserAnalytics from "../../../app/components/Admin/Analytics/UserAnalytics
 
 type Props = {};
 
-const page = (props: Props) => {
+const Page:FC<Props> = () => {
   return (
     <div>
       <Heading
@@ -28,4 +28,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Page;

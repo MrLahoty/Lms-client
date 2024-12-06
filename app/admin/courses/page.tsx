@@ -1,14 +1,14 @@
 "use client";
+import React, { FC } from "react";
 import DashboardHero from "../../../app/components/Admin/DashboardHero";
 import AdminProtected from "../../../app/hooks/adminProtected";
 import Heading from "../../../app/utils/Heading";
-import React from "react";
 import AdminSidebar from "../../components/Admin/sidebar/AdminSidebar";
 import AllCourses from "../../components/Admin/Course/AllCourses";
 
 type Props = {};
 
-const page = (props: Props) => {
+const Page:FC<Props> = () => {
   return (
     <div>
       <AdminProtected>
@@ -31,4 +31,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Page;
